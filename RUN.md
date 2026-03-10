@@ -3,8 +3,8 @@
 ## Quick Start (Smoke Test Only - No Snowflake Needed)
 
 ```bash
-git clone https://github.com/ben-blake/analytics-copilot.git
-cd analytics-copilot
+git clone https://github.com/ben-blake/cs5542-lab07.git
+cd cs5542-lab07
 chmod +x reproduce.sh
 ./reproduce.sh --smoke
 ```
@@ -24,8 +24,8 @@ This verifies that all modules import correctly, config loads, golden queries pa
 ### Step 1: Clone and Configure
 
 ```bash
-git clone https://github.com/ben-blake/analytics-copilot.git
-cd analytics-copilot
+git clone https://github.com/ben-blake/cs5542-lab07.git
+cd cs5542-lab07
 cp .env.example .env
 # Edit .env with your Snowflake credentials
 ```
