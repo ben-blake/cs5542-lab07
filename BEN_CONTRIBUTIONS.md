@@ -28,6 +28,7 @@
 | `.gitignore` | Git ignore rules for venv, credentials, logs, and data files | [`38922fb`](https://github.com/ben-blake/cs5542-lab07/commit/38922fb) |
 | `RELATED_WORK_REPRO.md` | Analysis of related work and reproduction findings | [`b92355f`](https://github.com/ben-blake/cs5542-lab07/commit/b92355f) |
 | `REPRO_AUDIT.md` | Reproducibility audit checklist and compliance report | [`f914769`](https://github.com/ben-blake/cs5542-lab07/commit/f914769) |
+| `.github/workflows/ci.yml` | GitHub Actions CI running smoke tests on push/PR (Python 3.10, 3.11) | [`07ddfda`](https://github.com/ben-blake/cs5542-lab07/commit/07ddfda) |
 
 ### Challenges Encountered
 
