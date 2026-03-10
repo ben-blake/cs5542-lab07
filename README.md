@@ -139,8 +139,8 @@ cs5542-lab07/
 ### 1. Clone and Configure
 
 ```bash
-git clone https://github.com/ben-blake/analytics-copilot.git
-cd analytics-copilot
+git clone https://github.com/ben-blake/cs5542-lab07.git
+cd cs5542-lab07
 cp .env.example .env
 # Edit .env with your Snowflake credentials
 ```
