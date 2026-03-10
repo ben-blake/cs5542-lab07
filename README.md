@@ -190,4 +190,4 @@ Results saved to `artifacts/evaluation_report.json`.
 
 ## Team Contributions
 
-See [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) for detailed individual contributions and commit history.
+See [`BEN_CONTRIBUTIONS.md`](BEN_CONTRIBUTIONS.md) and [`TINA_CONTRIBUTIONS.md`](TINA_CONTRIBUTIONS.md) for detailed individual contributions and commit history.
