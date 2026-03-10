@@ -8,26 +8,26 @@
 
 | File | Description | Commit |
 |------|-------------|--------|
-| `src/agents/schema_linker.py` | Schema Linker agent using Cortex Search for semantic RAG over table metadata with FK-aware supplementation | `_______` |
-| `src/agents/sql_generator.py` | SQL Generator agent that prompts Cortex LLM with linked schema context to produce SQL | `_______` |
-| `src/agents/validator.py` | Validator agent that executes generated SQL, detects errors, and triggers self-correction loops | `_______` |
-| `src/utils/snowflake_conn.py` | Snowflake Snowpark session manager with singleton pattern and key-pair authentication support | `_______` |
-| `src/utils/config.py` | YAML-based configuration loader for model, search, and pipeline parameters | `_______` |
-| `src/utils/logger.py` | Structured logging utility writing to `logs/pipeline.log` | `_______` |
-| `scripts/ingest_data.py` | End-to-end data ingestion: DDL execution, staged CSV upload, COPY INTO, and validation | `_______` |
-| `scripts/build_metadata.py` | Metadata builder that uses Cortex LLM to generate column descriptions and synonyms for RAG | `_______` |
-| `snowflake/01_setup.sql` | Database, schema, warehouse, and stage setup DDL | `_______` |
-| `snowflake/02_olist_tables.sql` | Olist dataset table definitions (9 tables) | `_______` |
-| `snowflake/03_superstore.sql` | Superstore dataset table definition | `_______` |
-| `snowflake/04_metadata.sql` | Metadata schema and `TABLE_DESCRIPTIONS` table DDL | `_______` |
-| `snowflake/05_cortex_search.sql` | Cortex Search Service creation over `TABLE_DESCRIPTIONS` | `_______` |
-| `config.yaml` | Central configuration for model selection, search parameters, and pipeline settings | `_______` |
-| `reproduce.sh` | Full reproducibility script orchestrating venv setup, ingestion, metadata, search service, evaluation, and artifact collection | `_______` |
-| `requirements.txt` | Pinned Python dependencies for deterministic installs | `_______` |
-| `.env.example` | Template for required Snowflake environment variables | `_______` |
-| `.gitignore` | Git ignore rules for venv, credentials, logs, and data files | `_______` |
-| `RELATED_WORK_REPRO.md` | Analysis of related work and reproduction findings | `_______` |
-| `REPRO_AUDIT.md` | Reproducibility audit checklist and compliance report | `_______` |
+| `src/agents/schema_linker.py` | Schema Linker agent using Cortex Search for semantic RAG over table metadata with FK-aware supplementation | [`c6fe6c8`](https://github.com/ben-blake/cs5542-lab07/commit/c6fe6c8) |
+| `src/agents/sql_generator.py` | SQL Generator agent that prompts Cortex LLM with linked schema context to produce SQL | [`1e1a11e`](https://github.com/ben-blake/cs5542-lab07/commit/1e1a11e) |
+| `src/agents/validator.py` | Validator agent that executes generated SQL, detects errors, and triggers self-correction loops | [`6f33c5f`](https://github.com/ben-blake/cs5542-lab07/commit/6f33c5f) |
+| `src/utils/snowflake_conn.py` | Snowflake Snowpark session manager with singleton pattern and key-pair authentication support | [`5cf0bd5`](https://github.com/ben-blake/cs5542-lab07/commit/5cf0bd5) |
+| `src/utils/config.py` | YAML-based configuration loader for model, search, and pipeline parameters | [`f2268d3`](https://github.com/ben-blake/cs5542-lab07/commit/f2268d3) |
+| `src/utils/logger.py` | Structured logging utility writing to `logs/pipeline.log` | [`971311b`](https://github.com/ben-blake/cs5542-lab07/commit/971311b) |
+| `scripts/ingest_data.py` | End-to-end data ingestion: DDL execution, staged CSV upload, COPY INTO, and validation | [`61babdf`](https://github.com/ben-blake/cs5542-lab07/commit/61babdf) |
+| `scripts/build_metadata.py` | Metadata builder that uses Cortex LLM to generate column descriptions and synonyms for RAG | [`2a7bf36`](https://github.com/ben-blake/cs5542-lab07/commit/2a7bf36) |
+| `snowflake/01_setup.sql` | Database, schema, warehouse, and stage setup DDL | [`693af32`](https://github.com/ben-blake/cs5542-lab07/commit/693af32) |
+| `snowflake/02_olist_tables.sql` | Olist dataset table definitions (9 tables) | [`693af32`](https://github.com/ben-blake/cs5542-lab07/commit/693af32) |
+| `snowflake/03_superstore.sql` | Superstore dataset table definition | [`693af32`](https://github.com/ben-blake/cs5542-lab07/commit/693af32) |
+| `snowflake/04_metadata.sql` | Metadata schema and `TABLE_DESCRIPTIONS` table DDL | [`693af32`](https://github.com/ben-blake/cs5542-lab07/commit/693af32) |
+| `snowflake/05_cortex_search.sql` | Cortex Search Service creation over `TABLE_DESCRIPTIONS` | [`693af32`](https://github.com/ben-blake/cs5542-lab07/commit/693af32) |
+| `config.yaml` | Central configuration for model selection, search parameters, and pipeline settings | [`00187b5`](https://github.com/ben-blake/cs5542-lab07/commit/00187b5) |
+| `reproduce.sh` | Full reproducibility script orchestrating venv setup, ingestion, metadata, search service, evaluation, and artifact collection | [`34cbd68`](https://github.com/ben-blake/cs5542-lab07/commit/34cbd68) |
+| `requirements.txt` | Pinned Python dependencies for deterministic installs | [`0e76ad2`](https://github.com/ben-blake/cs5542-lab07/commit/0e76ad2) |
+| `.env.example` | Template for required Snowflake environment variables | [`20aee32`](https://github.com/ben-blake/cs5542-lab07/commit/20aee32) |
+| `.gitignore` | Git ignore rules for venv, credentials, logs, and data files | [`38922fb`](https://github.com/ben-blake/cs5542-lab07/commit/38922fb) |
+| `RELATED_WORK_REPRO.md` | Analysis of related work and reproduction findings | [`b92355f`](https://github.com/ben-blake/cs5542-lab07/commit/b92355f) |
+| `REPRO_AUDIT.md` | Reproducibility audit checklist and compliance report | [`f914769`](https://github.com/ben-blake/cs5542-lab07/commit/f914769) |
 
 ### Challenges Encountered
 
