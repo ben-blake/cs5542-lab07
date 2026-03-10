@@ -48,6 +48,7 @@ cp .env.example .env   # fill in credentials
 | [`REPRO_AUDIT.md`](REPRO_AUDIT.md) | 8-point reproducibility checklist with evidence |
 | [`RELATED_WORK_REPRO.md`](RELATED_WORK_REPRO.md) | Related work reproduction report (X-SQL, NeurIPS 2025) |
 | [`team_report.pdf`](team_report.pdf) | Two-page team reproducibility report (LaTeX) |
+| [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | GitHub Actions CI running smoke tests on push/PR |
 
 ### Determinism Controls
 
@@ -122,6 +123,7 @@ cs5542-lab07/
 │   └── golden_queries.json    # 50 benchmark question-SQL pairs
 ├── artifacts/                 # Generated evaluation reports
 ├── logs/                      # Pipeline execution logs
+├── .github/workflows/ci.yml   # CI: smoke tests on push/PR
 ├── reproduce.sh               # Single-command reproduction
 ├── config.yaml                # Runtime configuration
 ├── requirements.txt           # Pinned dependencies
