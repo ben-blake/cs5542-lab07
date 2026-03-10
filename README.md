@@ -47,6 +47,7 @@ cp .env.example .env   # fill in credentials
 | [`RUN.md`](RUN.md) | Step-by-step reproduction instructions |
 | [`REPRO_AUDIT.md`](REPRO_AUDIT.md) | 8-point reproducibility checklist with evidence |
 | [`RELATED_WORK_REPRO.md`](RELATED_WORK_REPRO.md) | Related work reproduction report (X-SQL, NeurIPS 2025) |
+| [`team_report.pdf`](team_report.pdf) | Two-page team reproducibility report (LaTeX) |
 
 ### Determinism Controls
 
@@ -95,39 +96,42 @@ See [`RELATED_WORK_REPRO.md`](RELATED_WORK_REPRO.md) for the full reproduction r
 ## Repository Structure
 
 ```
-analytics-copilot/
+cs5542-lab07/
 ├── src/
-│   ├── agents/              # Multi-agent pipeline
-│   │   ├── schema_linker.py # RAG-based table retrieval
-│   │   ├── sql_generator.py # LLM SQL generation
-│   │   └── validator.py     # EXPLAIN validation + self-correction
+│   ├── agents/                # Multi-agent pipeline
+│   │   ├── schema_linker.py   # RAG-based table retrieval
+│   │   ├── sql_generator.py   # LLM SQL generation
+│   │   └── validator.py       # EXPLAIN validation + self-correction
 │   ├── utils/
-│   │   ├── snowflake_conn.py # Snowflake session management
-│   │   ├── viz.py            # Auto-chart generation
-│   │   ├── config.py         # Config loader with seed control
-│   │   └── logger.py         # File + console logging
-│   └── app.py               # Streamlit chat interface
+│   │   ├── snowflake_conn.py  # Snowflake session management
+│   │   ├── viz.py             # Auto-chart generation
+│   │   ├── config.py          # Config loader with seed control
+│   │   └── logger.py          # File + console logging
+│   └── app.py                 # Streamlit chat interface
 ├── scripts/
-│   ├── ingest_data.py       # CSV -> Snowflake ingestion
-│   ├── build_metadata.py    # Cortex-powered metadata generation
-│   ├── generate_golden.py   # Golden query benchmark generation
-│   └── evaluate.py          # Pipeline accuracy evaluation
-├── snowflake/               # DDL scripts (01-05)
+│   ├── ingest_data.py         # CSV -> Snowflake ingestion
+│   ├── build_metadata.py      # Cortex-powered metadata generation
+│   ├── generate_golden.py     # Golden query benchmark generation
+│   └── evaluate.py            # Pipeline accuracy evaluation
+├── snowflake/                 # DDL scripts (01-05)
 ├── tests/
-│   └── test_smoke.py        # 18 offline smoke tests
+│   └── test_smoke.py          # 18 offline smoke tests
 ├── data/
-│   ├── olist/               # 9 Olist CSVs
-│   ├── superstore/          # Superstore CSV (optional)
-│   └── golden_queries.json  # 50 benchmark question-SQL pairs
-├── artifacts/               # Generated evaluation reports
-├── logs/                    # Pipeline execution logs
-├── reproduce.sh             # Single-command reproduction
-├── config.yaml              # Runtime configuration
-├── requirements.txt         # Pinned dependencies
-├── RUN.md                   # Reproduction instructions
-├── REPRO_AUDIT.md           # Reproducibility audit
-├── RELATED_WORK_REPRO.md    # Related work report
-└── .env.example             # Credential template
+│   ├── olist/                 # 9 Olist CSVs
+│   ├── superstore/            # Superstore CSV (optional)
+│   └── golden_queries.json    # 50 benchmark question-SQL pairs
+├── artifacts/                 # Generated evaluation reports
+├── logs/                      # Pipeline execution logs
+├── reproduce.sh               # Single-command reproduction
+├── config.yaml                # Runtime configuration
+├── requirements.txt           # Pinned dependencies
+├── team_report.pdf            # Team reproducibility report
+├── BEN_CONTRIBUTIONS.md       # Ben's individual contribution statement
+├── TINA_CONTRIBUTIONS.md      # Tina's individual contribution statement
+├── RUN.md                     # Reproduction instructions
+├── REPRO_AUDIT.md             # Reproducibility audit
+├── RELATED_WORK_REPRO.md      # Related work report
+└── .env.example               # Credential template
 ```
 
 ## Setup Instructions
